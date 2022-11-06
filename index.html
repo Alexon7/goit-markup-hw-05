@@ -54,7 +54,16 @@
 		<main>
 			<section class="top-title overlay">
 				<h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-				<button type="button" class="title-button">Замовити послугу</button>
+				<button type="button" class="title-button" data-modal-open>Замовити послугу</button>
+				<div class="backdrop is-hidden" data-modal>
+					<div class="modal">
+						<button class="modal-close-button" data-modal-close>
+							<svg class="modal-close" width="18px" height="18px">
+								<use href="./images/symbol-defs.svg#icon-close-black"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
 			</section>
 
 			<section class="section">
@@ -112,9 +121,11 @@
 						</li>
 						<li class="item">
 							<img src="./images/img2.jpg" alt="дізайнер розробляє інтерфейс додатку" width="370" />
+							<p class="works-name">Мобільні додатки</p>
 						</li>
 						<li class="item">
 							<img src="./images/img3.jpg" alt="дізайнер вибирає кольори на графічному планшеті" width="370" />
+							<p class="works-name">Дизайнерські рішення</p>
 						</li>
 					</ul>
 				</div>
@@ -319,5 +330,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
