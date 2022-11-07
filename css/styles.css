@@ -410,7 +410,7 @@ img {
 	background: rgba(0, 0, 0, 0.2);
 	
 	opacity: 1;
-	transition: opacity 1000ms var(--timing-function);
+	transition: opacity 250ms var(--timing-function); 
 	
 }
 
@@ -418,8 +418,8 @@ img {
 	opacity: 0;
 	pointer-events: none;
 	visibility: hidden;
-	transition: opacity 1000ms var(--timing-function);
-	
+	/* transition: opacity 1000ms var(--timing-function); */
+		
 }
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0.7);
@@ -443,12 +443,14 @@ img {
 	transition: transform 250ms var(--timing-function);
 }
 .modal-close-button {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	width: 30px;
+	height: 30px;
+
+	border-radius: 50%;	
 	background: #ffffff;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	margin-top: 8px;
