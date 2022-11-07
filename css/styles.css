@@ -234,7 +234,6 @@ img {
 .works-resource {
 	/* display: block; */
 	position: absolute;
-	
 
 	top: 0;
 	left: 0;
@@ -353,6 +352,21 @@ img {
 }
 .link-footer:hover,
 .link-footer:focus {
+	color: var(--accent-color);
+}
+.link-footer-street {
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 250ms var(--timing-function);
+}
+.link-footer-street:hover,
+.link-footer-street:focus {
 	color: var(--accent-color);
 }
 
